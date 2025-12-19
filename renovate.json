@@ -1,17 +1,8 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["config:recommended"],
-  "packageRules": [
-    {
-      "matchDatasources": ["npm"],
-      "minimumReleaseAge": "2 days",
-      "internalChecksFilter": "strict",
-      "prCreation": "immediate"
-    },
-    {
-      "matchDatasources": ["npm"],
-      "matchPackageNames": ["gitlab-ci-env"],
-      "minimumReleaseAge": null
-    }
+  "extends": [
+    "config:recommended",
+    "github>aarongoldenthal/renovate-minimum-release-age-exception//presets/npm.json",
+    "github>aarongoldenthal/renovate-minimum-release-age-exception//presets/mra-exception.json"
   ]
 }
