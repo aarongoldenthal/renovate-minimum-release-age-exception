@@ -1,0 +1,6 @@
+{
+  "devDependencies": {
+    "gitlab-ci-env": "^11.2.0",
+    "puppeteer": "^24.33.0"
+  }
+}
